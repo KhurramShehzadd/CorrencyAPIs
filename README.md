@@ -25,13 +25,13 @@ Clone this repository to your local machine using the following command:
 The API should be accessible at http://localhost:5000
 
 ## API Endpoints
-### 1. api/Currency/latest
-**Description**: It will provide information of latest rates for all currencies
+### 1. api/Currency/latest <br>
+**Description**: It will provide information of latest rates for all currencies <br>
 
-**Parameters**:
-`baseCurrency` (query string): The base currency for which historical rates are requested (e.g., "USD").
+**Parameters**: <br>
+`baseCurrency` (query string): The base currency for which historical rates are requested (e.g., "USD"). <br>
 
-**Response**: Example JSON response:
+**Response**: Example JSON response: <br>
 `{
 "amount": 1,
 "base": "USD",
@@ -69,9 +69,9 @@ The API should be accessible at http://localhost:5000
 },
 "date": "2024-09-16"
 }`
-
-### 2. POST /api/Currency/convert
-**Description**: This API can be used for conversion between two currencies.
+<br>
+### 2. POST /api/Currency/convert <br>
+**Description**: This API can be used for conversion between two currencies. <br>
 **Request Body**:
 `{
   "baseCurrency": "string",
@@ -87,18 +87,18 @@ The API should be accessible at http://localhost:5000
     "INR": 83.86
   }
 }`
-
+<br>
 ### 3. GET /api/Currency/historical
-**Description**: This API can be used to get historial data for any given currecny using pagination.
+**Description**: This API can be used to get historial data for any given currecny using pagination. <br>
 
-**Parameters**:
-`baseCurrency` (query string): The base currency for which historical rates are requested (e.g., "USD").
-`startDate` (query string): The start date for the historical data in YYYY-MM-DD format (e.g., "2024-01-01").
-`endDate` (query string): The end date for the historical data in YYYY-MM-DD format (e.g., "2024-09-16").
-`page` (query string, optional): The page number for pagination. Default is 1.
-`pageSize` (query string, optional): The number of items per page for pagination. Default is 10.
+**Parameters**: <br>
+`baseCurrency` (query string): The base currency for which historical rates are requested (e.g., "USD"). <br>
+`startDate` (query string): The start date for the historical data in YYYY-MM-DD format (e.g., "2024-01-01").<br>
+`endDate` (query string): The end date for the historical data in YYYY-MM-DD format (e.g., "2024-09-16").<br>
+`page` (query string, optional): The page number for pagination. Default is 1.<br>
+`pageSize` (query string, optional): The number of items per page for pagination. Default is 10.<br>
 
-**Response**: Example JSON response:
+**Response**: Example JSON response: <br>
 `{
   "amount": 1,
   "base": "USD",
@@ -173,7 +173,7 @@ The API should be accessible at http://localhost:5000
   "pageNumber": "1",
   "pageSize": "10"
 }`
-
+<br>
 # Enhancements:
 **Add Advanced Filtering**: Include more options for filtering historical data based on different criteria.  <br>
 **Optimize Pagination**: Implement more advanced pagination techniques for better performance. <br>
