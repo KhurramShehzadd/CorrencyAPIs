@@ -26,12 +26,12 @@ The API should be accessible at http://localhost:5000
 
 ## API Endpoints
 ### 1. api/Currency/latest
-Description: It will provide information of latest rates for all currencies
+**Description**: It will provide information of latest rates for all currencies
 
-Parameters:
+**Parameters**:
 baseCurrency (query string): The base currency for which historical rates are requested (e.g., "USD").
 
-Response: Example JSON response:
+**Response**: Example JSON response:
 {
 "amount": 1,
 "base": "USD",
@@ -71,14 +71,14 @@ Response: Example JSON response:
 }
 
 ### 2. POST /api/Currency/convert
-Description: This API can be used for conversion between two currencies.
-Request Body:
+**Description**: This API can be used for conversion between two currencies.
+**Request Body**:
 {
   "baseCurrency": "string",
   "targetCurrency": "string",
   "amount": 0
 }
-Response: Example JSON response:
+**Response**: Example JSON response:
 {
   "amount": 1,
   "base": "USD",
@@ -89,16 +89,16 @@ Response: Example JSON response:
 }
 
 ### 3. GET /api/Currency/historical
-Description: This API can be used to get historial data for any given currecny using pagination.
+**Description**: This API can be used to get historial data for any given currecny using pagination.
 
-Parameters:
+**Parameters**:
 baseCurrency (query string): The base currency for which historical rates are requested (e.g., "USD").
 startDate (query string): The start date for the historical data in YYYY-MM-DD format (e.g., "2024-01-01").
 endDate (query string): The end date for the historical data in YYYY-MM-DD format (e.g., "2024-09-16").
 page (query string, optional): The page number for pagination. Default is 1.
 pageSize (query string, optional): The number of items per page for pagination. Default is 10.
 
-Response: Example JSON response:
+**Response**: Example JSON response:
 {
   "amount": 1,
   "base": "USD",
@@ -175,8 +175,8 @@ Response: Example JSON response:
 }
 
 # Enhancements:
-Add Advanced Filtering: Include more options for filtering historical data based on different criteria.
-Optimize Pagination: Implement more advanced pagination techniques for better performance.
-Tests: Separate project for all type of Tests, currently Tests are part of same project.
-Caching: In order to make it more performant, should introduce caching for faster responses and reducing the load on Frankfurt APIs
-Detailed Responses: Error response could be enhanced further in order to keep the applciation scalable and more maintainble.
+**Add Advanced Filtering**: Include more options for filtering historical data based on different criteria.
+**Optimize Pagination**: Implement more advanced pagination techniques for better performance.
+**Tests**: Separate project for all type of Tests, currently Tests are part of same project.
+**Caching**: In order to make it more performant, should introduce caching for faster responses and reducing the load on Frankfurt APIs
+**Detailed Responses**: Error response could be enhanced further in order to keep the applciation scalable and more maintainble.
