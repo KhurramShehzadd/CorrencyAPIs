@@ -10,8 +10,7 @@ The project is created in .NET core 3.1 using ONION architecture.
 ### Clone the Repository
 Clone this repository to your local machine using the following command:
 
-```bash
-git clone https://github.com/username/repositoryname.git
+`git clone https://github.com/username/repositoryname.git`
 
 # Run the Application
 1. Nevigate to project directory:
