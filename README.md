@@ -175,8 +175,8 @@ The API should be accessible at http://localhost:5000
 }`
 
 # Enhancements:
-**Add Advanced Filtering**: Include more options for filtering historical data based on different criteria.
-**Optimize Pagination**: Implement more advanced pagination techniques for better performance.
-**Tests**: Separate project for all type of Tests, currently Tests are part of same project.
-**Caching**: In order to make it more performant, should introduce caching for faster responses and reducing the load on Frankfurt APIs
-**Detailed Responses**: Error response could be enhanced further in order to keep the applciation scalable and more maintainble.
+**Add Advanced Filtering**: Include more options for filtering historical data based on different criteria.  <br>
+**Optimize Pagination**: Implement more advanced pagination techniques for better performance. <br>
+**Tests**: Separate project for all type of Tests, currently Tests are part of same project. <br>
+**Caching**: In order to make it more performant, should introduce caching for faster responses and reducing the load on Frankfurt APIs <br>
+**Detailed Responses**: Error response could be enhanced further in order to keep the applciation scalable and more maintainble. <br>
