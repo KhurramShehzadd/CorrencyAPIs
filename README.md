@@ -29,7 +29,7 @@ The API should be accessible at http://localhost:5000
 **Description**: It will provide information of latest rates for all currencies
 
 **Parameters**:
-baseCurrency (query string): The base currency for which historical rates are requested (e.g., "USD").
+`baseCurrency` (query string): The base currency for which historical rates are requested (e.g., "USD").
 
 **Response**: Example JSON response:
 `{
@@ -73,33 +73,33 @@ baseCurrency (query string): The base currency for which historical rates are re
 ### 2. POST /api/Currency/convert
 **Description**: This API can be used for conversion between two currencies.
 **Request Body**:
-{
+`{
   "baseCurrency": "string",
   "targetCurrency": "string",
   "amount": 0
-}
+}`
 **Response**: Example JSON response:
-{
+`{
   "amount": 1,
   "base": "USD",
   "date": "2024-09-16",
   "rate": {
     "INR": 83.86
   }
-}
+}`
 
 ### 3. GET /api/Currency/historical
 **Description**: This API can be used to get historial data for any given currecny using pagination.
 
 **Parameters**:
-baseCurrency (query string): The base currency for which historical rates are requested (e.g., "USD").
-startDate (query string): The start date for the historical data in YYYY-MM-DD format (e.g., "2024-01-01").
-endDate (query string): The end date for the historical data in YYYY-MM-DD format (e.g., "2024-09-16").
-page (query string, optional): The page number for pagination. Default is 1.
-pageSize (query string, optional): The number of items per page for pagination. Default is 10.
+`baseCurrency` (query string): The base currency for which historical rates are requested (e.g., "USD").
+`startDate` (query string): The start date for the historical data in YYYY-MM-DD format (e.g., "2024-01-01").
+`endDate` (query string): The end date for the historical data in YYYY-MM-DD format (e.g., "2024-09-16").
+`page` (query string, optional): The page number for pagination. Default is 1.
+`pageSize` (query string, optional): The number of items per page for pagination. Default is 10.
 
 **Response**: Example JSON response:
-{
+`{
   "amount": 1,
   "base": "USD",
   "rates": {
@@ -172,7 +172,7 @@ pageSize (query string, optional): The number of items per page for pagination. 
   "endDate": "2024-01-19",
   "pageNumber": "1",
   "pageSize": "10"
-}
+}`
 
 # Enhancements:
 **Add Advanced Filtering**: Include more options for filtering historical data based on different criteria.
