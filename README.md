@@ -32,7 +32,7 @@ The API should be accessible at http://localhost:5000
 baseCurrency (query string): The base currency for which historical rates are requested (e.g., "USD").
 
 **Response**: Example JSON response:
-{
+`{
 "amount": 1,
 "base": "USD",
 "rates": {
@@ -68,7 +68,7 @@ baseCurrency (query string): The base currency for which historical rates are re
 "ZAR": 17.6413
 },
 "date": "2024-09-16"
-}
+}`
 
 ### 2. POST /api/Currency/convert
 **Description**: This API can be used for conversion between two currencies.
