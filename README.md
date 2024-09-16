@@ -26,7 +26,7 @@ git clone https://github.com/username/repositoryname.git
 The API should be accessible at http://localhost:5000
 
 ## API Endpoints
-1. api/Currency/latest
+### 1. api/Currency/latest
 Description: It will provide information of latest rates for all currencies
 
 Parameters:
@@ -71,7 +71,7 @@ Response: Example JSON response:
 "date": "2024-09-16"
 }
 
-2. POST /api/Currency/convert
+### 2. POST /api/Currency/convert
 Description: This API can be used for conversion between two currencies.
 Request Body:
 {
@@ -89,7 +89,7 @@ Response: Example JSON response:
   }
 }
 
-3. GET /api/Currency/historical
+### 3. GET /api/Currency/historical
 Description: This API can be used to get historial data for any given currecny using pagination.
 
 Parameters:
@@ -175,7 +175,7 @@ Response: Example JSON response:
   "pageSize": "10"
 }
 
-## Enhancements:
+# Enhancements:
 Add Advanced Filtering: Include more options for filtering historical data based on different criteria.
 Optimize Pagination: Implement more advanced pagination techniques for better performance.
 Tests: Separate project for all type of Tests, currently Tests are part of same project.
