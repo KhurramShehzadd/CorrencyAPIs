@@ -78,6 +78,7 @@ The API should be accessible at http://localhost:5000
   "targetCurrency": "string",
   "amount": 0
 }`
+<br>
 **Response**: Example JSON response:
 `{
   "amount": 1,
