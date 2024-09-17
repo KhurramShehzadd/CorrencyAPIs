@@ -1,4 +1,4 @@
-# CorrencyAPIs
+# CurrencyAPIs
 The project is created in .NET core 3.1 using ONION architecture. 
 
 ## Prerequisites
@@ -179,5 +179,5 @@ The API should be accessible at http://localhost:5000
 **Add Advanced Filtering**: Include more options for filtering historical data based on different criteria.  <br>
 **Optimize Pagination**: Implement more advanced pagination techniques for better performance. <br>
 **Tests**: Separate project for all type of Tests, currently Tests are part of same project. <br>
-**Caching**: In order to make it more performant, should introduce caching for faster responses and reducing the load on Frankfurt APIs <br>
+**Caching**: In order to make it more performant, should introduce caching for faster responses and reducing the load on Frankfurter APIs <br>
 **Detailed Responses**: Error response could be enhanced further in order to keep the applciation scalable and more maintainble. <br>
